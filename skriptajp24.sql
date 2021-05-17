@@ -28,3 +28,9 @@ create table predavac(
     osoba int not null,
     iban varchar(32)
 );
+
+create table polaznik(
+    sifra int not null primary key auto_increment,
+    osoba int not null,
+    brojugovora varchar(20)
+);

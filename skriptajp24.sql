@@ -57,9 +57,32 @@ alter table predavac add foreign key (osoba) references osoba(sifra);
 
 
 select * from smjer;
+
 insert into smjer (naziv,trajanje)
 values ('Java programiranje',130);
 
 
 insert into smjer(sifra,naziv,trajanje,cijena,certifikat)
 values (null,'PHP programiranje',130,5999.99,false);
+
+
+
+
+select * from osoba;
+
+insert into osoba (ime,prezime,email) values
+('Marko','Markovic','marko@gmail.com'),
+('Shaquille','O''Neal','shaki@gmail.com'),
+('Ivo','Ivic','ivo@gmail.com'),
+('Stjepan','Stjepovic','stjepan@gmail.com'),
+('Josip','Josipic','josip@gmail.com'),
+('Tea','Teic','tea@gmail.com'),
+('Luka','Lukovic','luka@gmail.com'),
+('Iva','Ivic','iva@gmail.com'),
+('Mara','Maric','mara@gmail.com'),
+('Josip','Josipovic','josip@gmail.com'),
+('Petar','Peric','petar@gmail.com'),
+('Zoran','Zoric','zoran@gmail.com'),
+('Igor','Igoric','igor@gmail.com'),
+('Vedran','Vedric','vedran@gmail.com'),
+('Mara','Maric','mara@gmail.com');

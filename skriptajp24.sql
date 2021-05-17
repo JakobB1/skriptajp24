@@ -34,3 +34,11 @@ create table polaznik(
     osoba int not null,
     brojugovora varchar(20)
 );
+
+create table osoba(
+    sifra int not null primary key auto_increment,
+    ime varchar(50) not null,
+    prezime varchar(50) not null,
+    oib char(11),
+    email varchar(100)
+);

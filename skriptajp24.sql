@@ -22,3 +22,9 @@ create table clan(
     grupa int not null,
     polaznik int not null
 );
+
+create table predavac(
+    sifra int not null primary key auto_increment,
+    osoba int not null,
+    iban varchar(32)
+);

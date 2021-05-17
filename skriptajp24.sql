@@ -9,3 +9,11 @@ create table smjer(
     cijena decimal(18,2) null, # ako ne postoji not null onda se smatra da je null
     certifikat boolean
 );
+
+create table grupa(
+    sifra int not null primary key auto_increment,
+    naziv varchar(20) not null,
+    smjer int not null,
+    predavac int,
+    datumpocetka datetime
+);

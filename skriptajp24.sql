@@ -17,3 +17,8 @@ create table grupa(
     predavac int,
     datumpocetka datetime
 );
+
+create table clan(
+    grupa int not null,
+    polaznik int not null
+);
